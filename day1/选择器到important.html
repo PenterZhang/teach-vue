@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day01 选择器-权重important</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 
+
+        ./  // 相对路径 同级目录
+
+        /   // 绝对路径 盘符根目录
+
+        ../ // 上级目录
+
+        link // 标签名
+
+        rel     //属性
+
+        stylesheet //属性值
+
+        href    // 属性
+
+     -->
+     <style>
+        .dom1{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+     </style>
+</head>
+<body>
+    <!-- 元素优先级 < class 优先级 < id优先级 < 标签style优先级 <  !important 优先级 -->
+    <div class="dom1" id="dom1" style="
+    width: 100px !important;
+    height: 100px !important;
+    background-color: aqua !important;"></div>
+
+    <!-- abc代表标签属性，同时是一种css属性作用域的一种方式，也是一个元素选择的优选方案。在vue中比较常见于scoped属性 -->
+    <div abc class="dom2 center"></div>
+
+    <!-- 
+        text-align 对齐方式 只作用于行内元素或者行内块元素以及文字元素中的文字
+            center  剧中对齐
+            justify 两端对齐
+
+            text-align 可以使文字剧中或者两端对齐，包括但不限于任何标签但仅限于将元素内的文字居中对齐或者两端对齐。
+
+            当属性作用于行内块或者行内元素事，可以使元素居中。
+        
+        margin: 0px auto; // 作用于元素居中
+
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+
+        margin 一共有三种常见写法
+
+            1. margin: 0px; //直接作用于四个边的外边距
+
+            2. margin: 0px 0px; // 作用于上下、左右，一次设置两个边的外边距
+
+            3. margin-top/margin-right/margin-bottom/margin-left // 单次设置一个方位的边距
+
+        line-height // 设置行高，以文字为中心的上下间距是行高/2的距离
+
+        max-width // 设置最大宽度
+        min-width //设置最小宽度
+
+    -->
+    <p class="dom3">
+        在会谈现场，刚强对“七十、三a十、十”三个数字印象深刻——这分别对应着托卡耶夫总统的七十岁生日、中哈关系a新的“黄金a三十年”，以及共建“一带一路”倡议提出十年来结出的累累硕果。一起看刚强来自大国外交最前线的观察！
+    </p>
+
+    <!-- 
+
+        font-size // 调节文字大小  最小只能设置12px文字
+
+        font-weight // 调节文字粗细
+            bold/bolder // 粗体文字
+            lighter     // 细体文字
+
+        font-style：normal // 主要作用是设置文字样式，比如斜体文字或者去除斜体样式
+     -->
+
+    <div class="dom4">
+        <p>
+            在会谈现场，刚强对“七十、三a十、十”三个数字印象深刻——这分别对应着托卡耶夫总统的七十岁生日、中哈关系a新的“黄金a三十年”，以及共建“一带一路”倡议提出十年来结出的累累硕果。一起看刚强来自大国外交最前线的观察！
+            12312312321312
+        </p>
+        <em>12732321</em>
+    </div>
+    <!-- 
+
+        :hover  // 鼠标放上去的样式
+
+        :visited// 访问过的url的样式
+
+        :focus  // 鼠标焦点不消失时的样式，主要作用于输入框元素上
+
+        :active // 鼠标点击链接时的样式，和focus类似
+
+     -->
+
+    <a href="#" class="visited">a标签</a>
+    <br />
+    <a href="#" class="focus">a标签</a>
+    <br />
+    <a href="#" class="hover">a标签</a>
+    <br />
+    <a href="#" class="active">a标签</a>
+    <br />
+
+    <input type="text" value="123321">
+
+
+    <!-- 
+        无序列表
+        列表前方是一个小黑点
+     -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+
+    <!-- 
+        有序列表
+        列表前方是数字
+     -->
+    <ol>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ol>
+
+    <!-- 
+        table表格的开始/结束
+
+            tbody表格的主体（分两部分，一部分为头部，一部分为表格主体）
+
+            th表格表头 table header的缩写
+
+            td表格主体table body的缩写
+
+     -->
+    <table>
+        <tbody>
+            <th>
+
+            </th>
+        </tbody>
+        <tbody>
+            <td>
+
+            </td>
+        </tbody>
+    </table>
+
+    <!-- 
+        outline
+            主要作用于input/button输入框和按钮上面去除其默认样式的主要作用代码
+     -->
+
+     <button>按钮</button>
+
+
+
+     <!-- 
+        display:
+
+            none    // 隐藏元素
+
+            flex    // 将盒模型转为弹性盒模型
+
+            block // 将元素转为块元素
+
+            inline-block // 将元素转换为行内块元素
+
+            inline // 将元素转为行元素
+
+            grid // 将盒模型转为网格模型
+
+      -->
+
+      <div class="hiddenAndNone">
+        盒模型
+      </div>
+
+      <div class="flex">弹性盒模型</div>
+
+    
+</body>
+</html>
