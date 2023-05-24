@@ -88,3 +88,37 @@ button{
 .hiddenAndNone{
     margin: 100px;
 }
+
+.class1{
+    width: 100px !important;
+    height: 100px !important;
+    background-color: aquamarine;
+}
+
+#id1{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+div[aab]{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+}
+
+.dom3[aab]{
+    width: 100px;
+    height: 100px;
+}
+
+p[textCenter]{
+    text-align: center;
+}
+
+.boxCenter{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
