@@ -1,0 +1,442 @@
+.row {
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.row:nth-child(odd) {
+    background-color: brown;
+}
+
+.row:nth-child(even) {
+    background-color: blueviolet;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+@media screen and (max-width: 3840px) {
+
+    .row-lg-1 {
+        width: calc(100% / 24);
+    }
+    
+    .row-2 {
+        width: calc(100% / 24 * 2);
+    }
+    
+    .row-3 {
+        width: 12.5%;
+    }
+    
+    .row-4 {
+        width: calc(100% / 24 * 4);
+    }
+    
+    .row-5 {
+        width: calc(100% / 24 * 5);
+    }
+    
+    .row-6 {
+        width: 25%;
+        display: none;
+    }
+    
+    .row-7 {
+        width: calc(100% / 24 * 7);
+    }
+    
+    .row-8 {
+        width: calc(100% / 24 * 8);
+    }
+    
+    .row-9 {
+        width: 37.5%;
+    }
+    
+    .row-10 {
+        width: calc(100% / 24 * 10);
+    }
+    
+    .row-11 {
+        width: calc(100% / 24 * 11);
+    }
+    
+    .row-12 {
+        width: 50%;
+    }
+    
+    .row-13 {
+        width: calc(100% / 24 * 13);
+    }
+    
+    .row-14 {
+        width: calc(100% / 24 * 14);
+    }
+    
+    .row-15 {
+        width: 62.5%;
+    }
+    
+    .row-16 {
+        width: calc(100% / 24 * 16);
+    }
+    
+    .row-17 {
+        width: calc(100% / 24 * 17);
+    }
+    
+    .row-18 {
+        width: 75%;
+    }
+    
+    .row-19 {
+        width: calc(100% / 24 * 19);
+    }
+    
+    .row-20 {
+        width: calc(100% / 24 * 20);
+    }
+    
+    .row-21 {
+        width: 87.5%;
+    }
+    
+    .row-22 {
+        width: calc(100% / 24 * 22);
+    }
+    
+    .row-23 {
+        width: calc(100% / 24 * 23);
+    }
+    
+    .row-24 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .row-24{
+        display: none;
+    }
+
+    .row-1 {
+        width: calc(100% / 24);
+    }
+    
+    .row-2 {
+        width: calc(100% / 24 * 2);
+    }
+    
+    .row-3 {
+        width: 12.5%;
+    }
+    
+    .row-4 {
+        width: calc(100% / 24 * 4);
+    }
+    
+    .row-5 {
+        width: calc(100% / 24 * 5);
+    }
+    
+    .row-6 {
+        width: 25%;
+        display: none;
+    }
+    
+    .row-7 {
+        width: calc(100% / 24 * 7);
+    }
+    
+    .row-8 {
+        width: calc(100% / 24 * 8);
+    }
+    
+    .row-9 {
+        width: 37.5%;
+    }
+    
+    .row-10 {
+        width: calc(100% / 24 * 10);
+    }
+    
+    .row-11 {
+        width: calc(100% / 24 * 11);
+    }
+    
+    .row-12 {
+        width: 50%;
+    }
+    
+    .row-13 {
+        width: calc(100% / 24 * 13);
+    }
+    
+    .row-14 {
+        width: calc(100% / 24 * 14);
+    }
+    
+    .row-15 {
+        width: 62.5%;
+    }
+    
+    .row-16 {
+        width: calc(100% / 24 * 16);
+    }
+    
+    .row-17 {
+        width: calc(100% / 24 * 17);
+    }
+    
+    .row-18 {
+        width: 75%;
+    }
+    
+    .row-19 {
+        width: calc(100% / 24 * 19);
+    }
+    
+    .row-20 {
+        width: calc(100% / 24 * 20);
+    }
+    
+    .row-21 {
+        width: 87.5%;
+    }
+    
+    .row-22 {
+        width: calc(100% / 24 * 22);
+    }
+    
+    .row-23 {
+        width: calc(100% / 24 * 23);
+    }
+    
+    .row-24 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row-md-12{
+        display: none;
+    }
+
+    .row-md-1 {
+        width: calc(100% / 24);
+    }
+    
+    .row-md-2 {
+        width: calc(100% / 24 * 2);
+    }
+    
+    .row-md-3 {
+        width: 12.5%;
+    }
+    
+    .row-md-4 {
+        width: calc(100% / 24 * 4);
+    }
+    
+    .row-5 {
+        width: calc(100% / 24 * 5);
+    }
+    
+    .row-6 {
+        width: 25%;
+        display: none;
+    }
+    
+    .row-7 {
+        width: calc(100% / 24 * 7);
+    }
+    
+    .row-8 {
+        width: calc(100% / 24 * 8);
+    }
+    
+    .row-9 {
+        width: 37.5%;
+    }
+    
+    .row-10 {
+        width: calc(100% / 24 * 10);
+    }
+    
+    .row-11 {
+        width: calc(100% / 24 * 11);
+    }
+    
+    .row-12 {
+        width: 50%;
+    }
+    
+    .row-13 {
+        width: calc(100% / 24 * 13);
+    }
+    
+    .row-14 {
+        width: calc(100% / 24 * 14);
+    }
+    
+    .row-15 {
+        width: 62.5%;
+    }
+    
+    .row-16 {
+        width: calc(100% / 24 * 16);
+    }
+    
+    .row-17 {
+        width: calc(100% / 24 * 17);
+    }
+    
+    .row-md-18 {
+        width: 75%;
+    }
+    
+    .row-19 {
+        width: calc(100% / 24 * 19);
+    }
+    
+    .row-20 {
+        width: calc(100% / 24 * 20);
+    }
+    
+    .row-21 {
+        width: 87.5%;
+    }
+    
+    .row-22 {
+        width: calc(100% / 24 * 22);
+    }
+    
+    .row-23 {
+        width: calc(100% / 24 * 23);
+    }
+    
+    .row-24 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .row-xs-8{
+        display: none;
+    }
+    .row-xs-6{
+        display: block;
+    }
+
+    .row-xs-1 {
+        width: calc(100% / 24);
+    }
+    
+    .row-xs-2 {
+        width: calc(100% / 24 * 2);
+    }
+    
+    .row-xs-3 {
+        width: 12.5%;
+    }
+    
+    .row-4 {
+        width: calc(100% / 24 * 4);
+    }
+    
+    .row-5 {
+        width: calc(100% / 24 * 5);
+    }
+    
+    .row-6 {
+        width: 25%;
+        display: none;
+    }
+    
+    .row-7 {
+        width: calc(100% / 24 * 7);
+    }
+    
+    .row-8 {
+        width: calc(100% / 24 * 8);
+    }
+    
+    .row-9 {
+        width: 37.5%;
+    }
+    
+    .row-10 {
+        width: calc(100% / 24 * 10);
+    }
+    
+    .row-11 {
+        width: calc(100% / 24 * 11);
+    }
+    
+    .row-12 {
+        width: 50%;
+    }
+    
+    .row-13 {
+        width: calc(100% / 24 * 13);
+    }
+    
+    .row-14 {
+        width: calc(100% / 24 * 14);
+    }
+    
+    .row-15 {
+        width: 62.5%;
+    }
+    
+    .row-16 {
+        width: calc(100% / 24 * 16);
+    }
+    
+    .row-17 {
+        width: calc(100% / 24 * 17);
+    }
+    
+    .row-18 {
+        width: 75%;
+    }
+    
+    .row-19 {
+        width: calc(100% / 24 * 19);
+    }
+    
+    .row-20 {
+        width: calc(100% / 24 * 20);
+    }
+    
+    .row-21 {
+        width: 87.5%;
+    }
+    
+    .row-22 {
+        width: calc(100% / 24 * 22);
+    }
+    
+    .row-23 {
+        width: calc(100% / 24 * 23);
+    }
+    
+    .row-xs-24 {
+        width: 100%;
+    }
+}
+

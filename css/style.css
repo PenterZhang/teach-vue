@@ -1,0 +1,120 @@
+#dom1{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+}
+
+#dom1{
+    width: 150px !important;
+    height: 150px !important;
+    background-color: blueviolet !important;
+}
+
+.dom1{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.dom2[abc]{
+    background-color: brown;
+}
+
+div[abc]{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+.dom2.center{
+    width: 100px;
+    height: 100px;
+}
+
+.dom3{
+    max-width: 500px;
+    min-width: 200px;
+    text-align: center;
+    margin: 0 auto;
+
+    line-height: 100px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+em{
+    font-style: normal;
+}
+
+.dom4{
+    text-align: center;
+}
+
+.dom4 p{
+    width: 500px;
+    text-align: justify;
+    display: inline-block;
+}
+
+.visited:visited{ /* 访问过的链接样式 */
+    color: brown;
+}
+
+.focus:focus{ /* 输入框聚焦后样式 */
+    color: aqua;
+}
+
+.hover:hover{ /* 鼠标放上去的样式 */
+    color: bisque;
+}
+
+.active:active{ /* 鼠标点住不松手的样式 */
+    color: blue;
+}
+
+button{
+    outline: none;
+    border: 1px solid #333;
+}
+
+.hiddenAndNone{
+    margin: 100px;
+}
+
+.class1{
+    width: 100px !important;
+    height: 100px !important;
+    background-color: aquamarine;
+}
+
+#id1{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+div[aab]{
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+}
+
+.dom3[aab]{
+    width: 100px;
+    height: 100px;
+}
+
+p[textCenter]{
+    text-align: center;
+}
+
+.boxCenter{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}

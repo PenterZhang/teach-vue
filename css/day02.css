@@ -1,0 +1,107 @@
+.overflow{
+    height: 150px;
+    overflow: hidden;
+
+    /*
+
+        1. overflow-x/y: scroll //  配合元素宽度/高度实现滚动效果
+
+        2. overflow: hidden // 配合元素高度实现隐藏效果
+    
+    */
+}
+
+p{
+    /* max-width: 500px; */
+    /* 
+        隐藏元素内容 
+        清除子元素的float浮动所导致的没有高度问题
+    */
+    overflow: hidden;
+    /* 使文字内容不换行 */
+    white-space: nowrap;
+    /* 超出后的样式 */
+    text-overflow: ellipsis;
+}
+
+.clear{
+    overflow: hidden;
+}
+
+.float{
+    clear: both; /* 清除自身浮动 */
+}
+
+.dom3{
+    /*
+        块级元素默认宽度为100%，并且不向左兼容
+    */
+
+    width: 100px;
+    background-color: antiquewhite;
+    /* 
+        将块级元素实现向左兼容，使多个块级元素并拍到一行
+    */
+    float: left;
+}
+
+.clear>p:nth-of-type(even){
+    color: red;
+}
+
+.clear>p:nth-of-type(odd){
+    color: green;
+}
+
+/*
+
+    odd 为奇数选择器
+
+    even 为偶数选择器
+
+    3n+1 代表选择每过4个即为选中的元素（包括第一个）
+
+*/
+
+.clear>p:nth-of-type(3n + 1){
+    color: gold;
+}
+
+.clear>p:nth-of-type(3n - 1){
+    color: gray;
+}
+
+p::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+p::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.animate{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    transition: .3s;
+}
+
+.animate:hover{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    /*
+        transition  设置动画时常 0.0（N个0）-1
+        opacity 设置元素透明度  0.0（N个0）-1
+    */
+    opacity: 0;
+    transition: .3s;
+}

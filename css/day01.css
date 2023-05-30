@@ -1,0 +1,102 @@
+.dom1{
+    width: 100%;
+    height: 200px;
+    background: url(https://pic.616pic.com/bg_w1180/00/00/44/AWmPutVSXZ.jpg!/fw/1120) no-repeat bottom right / 100px 10px;
+    /* 等于 以下代码合集 */
+    /* 
+    background-image: url(https://pic.616pic.com/bg_w1180/00/00/44/AWmPutVSXZ.jpg!/fw/1120); // 图片地址
+    background-repeat: no-repeat; // 重叠情况
+    background-position: center; // 定位
+    background-position-x: center; //单独设置X轴定位，值有top、right、left、center、bottom
+    background-position-y: center; //单独设置Y轴定位
+    background-size: 100% 100%; // 设置背景图大小
+    */
+}
+
+.dom1 p{
+    position: relative;
+    bottom: -100px;
+    left: 100px;
+}
+
+
+/*  上一节课挑战题做法 */
+
+/* text-align: justify;  文字/行内块元素两端对齐 */
+/* text-align: center;  文字/行内块元素居中对齐 */
+
+.dom2{
+    text-align: center;
+}
+
+.dom2 p{
+    width: 200px;
+    display: inline-block; /* 上文已经介绍，text-align可以作用于文字和行内块元素，在这里就是利用作用于行内块元素居中来达到目的 */
+    text-align: justify; /* 通过设置两端对齐，取消继承父级的文字居中效果 */
+    font-style: italic; /* italic 斜体文字 normal正常字体 */
+    font-weight: bolder; /* bolder/bold 粗体文字 */
+    font-size: 22px;
+}
+
+/*  
+
+    font常用属性
+
+    font-style // 设置斜体/划线文字
+    font-weight // 设置文字加粗
+    font-size  // 设置字号
+
+*/
+
+/* 
+
+    border常用属性
+
+    border-radius // 给任意元素设置圆角
+
+    border: 1px solid #000;  // 设置边框； 对应的值分别为边框宽度、边框样式（solid实线、dashed虚线两种常用线型样式。）以及边框颜色；
+    
+    border可以拆分为 border-top/right/bottom/left 后面的值与border一致。
+
+    border-top: 1px solid #000;
+
+*/
+
+/* 
+
+    max-height: ;
+
+    min-height: ;
+
+    max-width: ;
+
+    min-width: ;
+
+*/
+
+.fixed{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,.5);
+}
+
+.rel{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    top: 200px;
+    left: 500px;
+    background-color: blue;
+}
+
+.abs{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    left: 50px;
+    background-color: brown;
+}
